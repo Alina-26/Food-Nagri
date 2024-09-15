@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Nagri</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <script>
+        // Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+    </script>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Food Nagri</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home">
+        <div class="header-content">
+            <h1>Welcome to Food Nagri</h1>
+            <p>Delicious food from the heart of the city</p>
+            <a href="#menu" class="cta-button">See Our Menu</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Food Nagri is a restaurant that combines the essence of traditional flavors with a modern twist. We bring you the best dishes from local and international cuisines.</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <img src="pizza.jpg" alt="Pizza" class="menu-image">
+            <h3>Pizza</h3>
+            <p>Classic Italian pizza with a variety of toppings.</p>
+        </div>
+        <div class="menu-item">
+            <img src="burger.jpg" alt="Burger" class="menu-image">
+            <h3>Burgers</h3>
+            <p>Juicy burgers with fresh ingredients and secret sauces.</p>
+        </div>
+        <div class="menu-item">
+            <img src="pasta.jpg" alt="Pasta" class="menu-image">
+            <h3>Pasta</h3>
+            <p>Creamy pasta dishes prepared to perfection.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Food Nagri. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
